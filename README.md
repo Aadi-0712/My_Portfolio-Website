@@ -1,70 +1,163 @@
-# Getting Started with Create React App
+# Modern React Portfolio Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A professional, modern, and responsive portfolio website built with React featuring a clean design, smooth animations, and mobile-first approach.
 
-## Available Scripts
+## 🚀 Features
 
-In the project directory, you can run:
+- **Modern Split Layout Homepage** - Left side profile image, right side introduction with download CV button
+- **Responsive Navigation** - Clean top navigation with smooth transitions
+- **Animated Components** - Framer Motion animations throughout the site
+- **Professional Sections**:
+  - Home with hero section and stats
+  - Resume with timeline experience and education
+  - Skills with interactive progress bars
+  - Contact with functional form and social links
+- **Modern Design System** - Consistent colors, typography, and spacing
+- **Mobile Responsive** - Optimized for all device sizes
+- **Professional Typography** - Inter font for modern, clean appearance
 
-### `npm start`
+## 🛠️ Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **React 18** - Modern React with hooks
+- **React Router** - Client-side routing
+- **Framer Motion** - Smooth animations and transitions
+- **React Icons** - Comprehensive icon library
+- **CSS3** - Modern CSS with custom properties and grid/flexbox
+- **Responsive Design** - Mobile-first approach
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 📁 Project Structure
 
-### `npm test`
+```
+portfolio-website/
+├── public/
+│   └── index.html
+├── src/
+│   ├── components/
+│   │   ├── Navbar.js
+│   │   └── Navbar.css
+│   ├── pages/
+│   │   ├── Home.js
+│   │   ├── Home.css
+│   │   ├── Resume.js
+│   │   ├── Resume.css
+│   │   ├── Skills.js
+│   │   ├── Skills.css
+│   │   ├── Contact.js
+│   │   └── Contact.css
+│   ├── App.js
+│   ├── App.css
+│   ├── index.js
+│   └── index.css
+└── package.json
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🎨 Design Features
 
-### `npm run build`
+- **Color Scheme**: Modern blue gradient (#2563eb to #06b6d4)
+- **Typography**: Inter font family for professional appearance  
+- **Shadows**: Soft, layered shadows for depth
+- **Border Radius**: Consistent rounded corners (16px for cards, 8px for buttons)
+- **Animations**: Smooth fade-in, slide-in, and hover effects
+- **Grid Layouts**: CSS Grid for responsive, professional layouts
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🚀 Getting Started
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. **Install Dependencies**
+   ```bash
+   npm install
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. **Start Development Server**
+   ```bash
+   npm start
+   ```
 
-### `npm run eject`
+3. **Build for Production**
+   ```bash
+   npm run build
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 📝 Customization
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Personal Information
+- Update profile image in `Home.js` (line 19)
+- Modify name, description, and stats in `Home.js`
+- Update contact information in `Contact.js`
+- Replace social media links throughout components
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Content
+- **Resume**: Edit experience, education, and certifications in `Resume.js`
+- **Skills**: Modify skill categories and proficiency levels in `Skills.js`
+- **Contact**: Update contact methods and form handling in `Contact.js`
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Styling
+- **Colors**: Modify CSS custom properties in `index.css` and `App.css`
+- **Typography**: Update font imports and font-family declarations
+- **Layout**: Adjust grid layouts and spacing in individual CSS files
 
-## Learn More
+### CV Download
+- Add your CV file to the `public` folder
+- Update the file path in `Home.js` handleDownloadCV function
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 📱 Responsive Design
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **Desktop**: Full split layout with all features
+- **Tablet**: Stacked layout with maintained functionality  
+- **Mobile**: Single column, optimized touch interactions
 
-### Code Splitting
+## 🔧 Performance Optimizations
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Lazy loading of components
+- Optimized animations with Framer Motion
+- Minimal bundle size with tree-shaking
+- Efficient CSS with custom properties
+- Mobile-first responsive design
 
-### Analyzing the Bundle Size
+## 🌟 Key Components
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Navbar
+- Fixed position with backdrop blur
+- Active state indicators
+- Mobile hamburger menu
+- Smooth scroll behavior
 
-### Making a Progressive Web App
+### Home Page  
+- Split layout design
+- Profile image with decorative elements
+- Call-to-action buttons
+- Statistics showcase
+- Social media links
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Resume Page
+- Timeline layout for experience
+- Card-based education section  
+- Certification badges
+- Download functionality
 
-### Advanced Configuration
+### Skills Page
+- Categorized skill sections
+- Animated progress bars
+- Tools and technologies grid
+- Interactive hover effects
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Contact Page
+- Functional contact form
+- Contact information cards
+- Social media integration
+- Form validation and submission
 
-### Deployment
+## 📄 License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+This project is open source and available under the [MIT License](LICENSE).
 
-### `npm run build` fails to minify
+## 🤝 Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Feel free to fork this project and customize it for your own portfolio. If you make improvements, pull requests are welcome!
+
+## 📞 Support
+
+If you have any questions or need help customizing the portfolio, feel free to reach out through the contact form or create an issue in the repository.
+
+---
+
+**Built with ❤️ and modern web technologies**
