@@ -7,7 +7,7 @@ const Resume = () => {
   const handleDownloadCV = () => {
     // Replace with your actual CV file path
     const link = document.createElement('a');
-    link.href = 'Resume_28AUG (1).pdf';
+    link.href = 'Resume_1SEP.pdf';
     link.download = 'My-Resume.pdf';
     link.click();
   };
